@@ -17,6 +17,12 @@ spring:
       testOnReturn: false
       poolPreparedStatements: true
       maxOpenPreparedStatements: 20
+      
+security:
+    basic:
+      enabled: false    
+      
 
 mybatis:
   mapper-locations: classpath:mappers/*Mapper.xml
+ 
