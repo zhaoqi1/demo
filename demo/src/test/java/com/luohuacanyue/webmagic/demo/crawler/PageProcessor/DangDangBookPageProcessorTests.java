@@ -30,6 +30,9 @@ public class DangDangBookPageProcessorTests {
 		Spider.create(new DangDangBookPageProcessor()).setScheduler(new RedisScheduler("localhost")).addUrl("http://search.dangdang.com/?key=java&act=input&page_index=1").addPipeline(new DangDangBookPipeline()).addPipeline(dangDangBookDbPipeline/*new DangDangBookDbPipeline()*/)/*.addPipeline(new FilePipeline("D:\\webmagic"))*/.run();	
 	}
 	
+	/**
+	 * 下载文件
+	 */
 	@Test
 	public void downloadFileTest() {
 		

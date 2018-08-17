@@ -37,6 +37,8 @@ public class FileDownloadUtil {
 		HttpGet httpGet = new HttpGet(url);
 		try {
 			HttpResponse response = client.execute(httpGet);
+			cookieStore=client.getCookieStore();
+			
 			pirntHeaders(response);
 			
 			HttpEntity entity=response.getEntity();
