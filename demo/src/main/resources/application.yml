@@ -3,7 +3,7 @@ spring:
       type: com.alibaba.druid.pool.DruidDataSource
       url: jdbc:mysql://www.luohuacanyue.top:3306/test?useSSL=false&useUnicode=true&characterEncoding=utf-8
       username: zhaoqi
-      password: qr3ew8[2;V
+      password: ######
       driver-class-name: com.mysql.jdbc.Driver
       initialSize: 5
       maxActive: 200
